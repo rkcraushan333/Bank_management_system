@@ -4,6 +4,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import Exceptions.AccNotFound;
+import java.awt.Color;
 import Exceptions.InvalidAmount;
 import Exceptions.MaxBalance;
 import Exceptions.MaxWithdraw;
@@ -69,7 +70,7 @@ public class WithdrawAcc extends JFrame implements Serializable {
 		lblAmount.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAmount.setBounds(10, 150, 96, 14);
 		contentPane.add(lblAmount);
-		
+		// contentPane.setbackground(new Color(124, 15, 94));
 		JButton btnDeposit = new JButton("Withdraw");
 		btnDeposit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
